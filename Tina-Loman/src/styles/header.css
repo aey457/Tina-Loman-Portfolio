@@ -1,0 +1,123 @@
+/* =========================
+   Header / Navigation
+   ========================= */
+
+.header {
+  position: sticky;
+  top: var(--top-lang-bar);
+  /* top: 0; */
+  margin-left: 80px;
+  z-index: 10;
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+  height: auto; /* keep the original height */
+  padding: 0;
+}
+
+/* --- container flex --- */
+.main-header .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  /* padding-left: 0;
+  padding-right: 0; */
+}
+
+.header-bar {
+  border-bottom: 1px solid #000;
+}
+/* --- header brand --- */
+.header-brand {
+  top: 0;
+  z-index: 999;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  position: relative;
+  padding: 0rem 1rem 0.5rem 1rem;
+}
+
+.header-brand::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1.25px solid currentColor;
+}
+
+/* --- logo --- */
+.navbar-brand {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: var(--fs-h1);
+  letter-spacing: 0.03em;
+}
+
+.brand-subtitle {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (min-width: 768px) {
+  .navbar-collapse {
+    justify-content: flex-start;
+  }
+
+  .navbar-nav {
+    margin-left: 2rem; /* 貼 logo 2rem */
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .left-sidebar {
+    display: none;
+  }
+  .right-sidebar {
+    display: none;
+  }
+
+  .header {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .main-wrapper {
+    margin-left: 0;
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  .navbar-nav {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .navbar-nav .nav-link,
+  .navbar-nav .btn {
+    text-align: right;
+    width: auto;
+  }
+}
+
+.site-footer {
+  position: relative;
+}
+
+/* =========================
+   Header / Navigation
+   ========================= */

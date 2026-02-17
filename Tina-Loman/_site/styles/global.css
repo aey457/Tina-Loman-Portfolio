@@ -1,0 +1,307 @@
+:root {
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Noto Sans", system-ui, -apple-system, sans-serif;
+
+  --fs-h1: 3rem; /* 48px */
+  --fs-h2: 2.25rem; /* 36px */
+  --fs-h3: 1.5rem; /* 24px */
+  --fs-p: 1rem; /* 16px */
+  --fs-des: 0.875rem; /* 14px */
+  --fs-hint: 0.75rem; /* 12px */
+  --btn-xs: 1rem;
+
+  --color-bg: #fff;
+  --color-text: #322826;
+  --color-primary: #f5f5f0;
+  --color-secondary: #d9d9d9;
+  --color-semantic: #afcbdf;
+  --color-semantic-blue: #1e2a38;
+  --color-semantic-brown: #2c2c2c;
+
+  /* --color-primary-light: #e2dede !important;
+  --color-secondary-dark: #322826;
+  --color-secondary-medium: #85645d;
+  --color-secondary-light: #c7a9a3;
+  --color-accent-dark: #8c948c;
+  --color-accent-medium: #712200;
+  --color-text-dark: #322826;
+  --color-text-medium: #5b5b5b;
+  --color-text-light: #fffdfd;
+  --color-danger: #bd3900; */
+}
+
+.top-lang-bar {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+html,
+body {
+  /* height: 100%;  */
+  /* 滿螢幕 */
+  margin: 0;
+  /* display: block; */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--fs-p);
+  line-height: 1.6;
+
+  background-color: var(--color-bg);
+  min-height: 100vh;
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-heading);
+    line-height: 1.25;
+  }
+
+  h1 {
+    font-size: var(--fs-h1);
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: var(--fs-h2);
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: var(--fs-h3);
+    font-weight: 500;
+  }
+
+  p {
+    font-size: var(--fs-p);
+  }
+
+  .description {
+    font-size: var(--fs-des);
+  }
+
+  .hint {
+    font-size: var(--fs-hint);
+  }
+}
+
+.page-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex: 0 0 auto;
+  /* 整個畫面高度 */
+  position: relative;
+  /* new */
+}
+
+.left-sidebar {
+  width: 80px;
+  background-color: #ffffff;
+  border-right: 1px solid #000000;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 15;
+  /* position: sticky; */
+}
+
+.right-sidebar {
+  width: 80px;
+  background-color: #ffffff;
+  border-left: 1px solid #000000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80px;
+  bottom: 0;
+  /* height: 100%; */
+
+  z-index: 1; /* 很低 */
+  pointer-events: none; /* 純裝飾 */
+}
+
+.main-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 80px; */
+  position: relative;
+  z-index: 10;
+}
+
+main {
+  flex: 1;
+}
+
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0;
+  position: relative;
+  /* new */
+  z-index: 40;
+  gap: 16px;
+
+  height: 120px;
+  padding: 16px 16px 16px 32px;
+
+  background-color: var(--color-semantic-brown);
+  color: #fff;
+}
+
+.site-footer h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+}
+
+.footer-contact {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-contact a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-contact a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.btn-custom {
+  border-radius: 0;
+  border: 1px solid var(--color-semantic-blue);
+  color: var(--color-text);
+  background: var(--color-bg);
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-custom-xs {
+  font-size: var(--btn-xs);
+  font-weight: 400;
+  display: inline-flex;
+  width: 10rem;
+  height: 3.5rem;
+  padding: 1rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-custom:hover {
+  background-color: var(--color-secondary);
+}
+
+.diamond {
+  position: relative; /* 方便絕對定位裡面的小三角 */
+  width: 100px; /* 棱形寬度 */
+  height: 100px; /* 棱形高度 */
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.triangle.top {
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  /* border-bottom: 50px solid var(--color-secondary); */
+  top: 0;
+}
+
+.triangle.bottom {
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  /* border-top: 50px solid var(--color-text); */
+  bottom: 0;
+}
+
+/* body.dark-mode {
+  --color-bg: #1c1c1c;
+  --color-text: #f5f5f5;
+  --color-primary: #bca8a8;
+}
+
+.header,
+.navbar,
+.navbar-nav .nav-link {
+  background-color: var(--color-bg);
+  color: var(--color-text); */
+
+/* padding-top: 80px; */
+
+/* @media (max-width: 768px) {
+    padding-top: 48px;
+  } */
+
+/* main {
+  flex-grow: 1;
+  max-width: 100%;
+
+  @media (max-width: 768px) {
+    padding-inline: 20px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+hr {
+  margin-block: 20px;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+.obj-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* html,
+body {
+  height: 100%;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+} */
+
+/* main {
+  flex: 1; /* 撐開中間內容 */
