@@ -1,0 +1,665 @@
+/* .project-hero {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-top: 0;
+  padding-inline: 8rem;
+  background-color: var(--color-secondary);
+} */
+
+.project-hero {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.project-hero-media {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+}
+/* .project-video {
+  width: 50%;
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 12px;
+} */
+
+.detail-hero-image {
+  width: clamp(1280px, 30vw, 600px);
+  aspect-ratio: 1.5 / 1;
+  overflow: hidden;
+  flex-shrink: 0;
+  @media (max-width: 1024px) {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+  }
+  @media (max-width: 767.98px) {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+  }
+}
+
+.detail-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-hero-description {
+  width: 100%;
+  max-width: 1200px;
+  text-align: left;
+  /* margin-left: 0;
+  margin-right: 0; */
+}
+
+.github-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #222;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #222;
+  transition: all 0.2s ease;
+}
+
+.github-button:hover {
+  background-color: #222;
+  color: white;
+}
+
+.development-process {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* .project-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border-top: 1px solid #000;
+} */
+
+.project-section > .container {
+  /* max-width: 1400px; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border-top: 1px solid #000;
+}
+
+.detail-section-image {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.lightbox-trigger {
+  display: block;
+  width: 100%;
+  height: 420px;
+  padding: 0;
+  border: 0;
+  background: #f5f5f0;
+  cursor: zoom-in;
+  overflow: hidden;
+}
+
+.lightbox-trigger img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4rem;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.lightbox.is-open {
+  display: flex;
+}
+
+.lightbox-image {
+  display: block;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+
+  width: 44px;
+  height: 44px;
+
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lightbox-close:hover {
+  background: #fff;
+  color: #222;
+}
+
+.impact-section {
+  padding: 6rem 0;
+}
+
+.impact-item {
+  height: 100%;
+  padding: 2rem 0;
+  border-top: 1px solid var(--color-text);
+}
+
+.impact-number {
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.08em;
+  opacity: 0.6;
+}
+
+.impact-item h3 {
+  margin-bottom: 1rem;
+}
+
+.impact-item p:last-child {
+  margin-bottom: 0;
+}
+
+/* feature exhibition */
+/* =========================================
+   FEATURE SHOWCASE
+========================================= */
+
+.feature-showcase {
+  padding: 7rem 0;
+}
+
+/* Each storytelling moment */
+
+.showcase-row {
+  min-height: 75vh;
+  padding: 7rem 0;
+}
+
+/* Text */
+
+.showcase-row h3 {
+  margin-bottom: 1.25rem;
+}
+
+.showcase-contribution {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* Media */
+
+.showcase-media {
+  width: 100%;
+}
+
+.showcase-media img,
+.showcase-media video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Full-width ending */
+
+.product-moment {
+  padding: 8rem 0 3rem;
+}
+
+.product-moment-media {
+  width: 100%;
+}
+
+.product-moment-media img,
+.product-moment-media video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Mobile */
+
+@media (max-width: 991.98px) {
+  .feature-showcase {
+    padding: 5rem 0;
+  }
+
+  .showcase-row {
+    min-height: auto;
+    padding: 4.5rem 0;
+  }
+
+  .product-moment {
+    padding-top: 5rem;
+  }
+}
+
+.youtube-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.youtube-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* 4 My contribtuino detail button style*/
+/* Independent feature ownership */
+
+.showcase-contribution--owned {
+  margin-top: 1.75rem;
+}
+
+.contribution-badge {
+  display: inline-block;
+
+  margin-bottom: 0.9rem;
+  padding: 0.35rem 0.7rem;
+
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--color-accent-dark);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  border: 1px solid var(--color-accent-dark);
+  border-radius: 100px;
+}
+
+.contribution-details {
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* Detail link */
+
+.feature-detail-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  margin-top: 1.5rem;
+  padding-bottom: 0.25rem;
+
+  color: var(--color-semantic);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  border-bottom: 1px solid var(--color-semantic);
+}
+
+.feature-detail-link span {
+  transition: transform 0.25s ease;
+}
+
+.feature-detail-link:hover span {
+  transform: translateX(5px);
+}
+
+/* ================================
+   BROWSER FRAME
+================================ */
+
+.browser-frame {
+  width: 100%;
+  overflow: hidden;
+
+  background: #fff;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+/* Browser top bar */
+
+.browser-frame-header {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  height: 44px;
+  padding: 0 14px;
+
+  background: #f5f3f0;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Browser dots */
+
+.browser-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.browser-dots span {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.22);
+}
+
+/* Address */
+
+.browser-address {
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 0.7rem;
+  letter-spacing: 0.02em;
+
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/* Website media */
+
+.browser-frame video,
+.browser-frame img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+/* Carousel CSS */
+.browser-frame .carousel-control-prev,
+.browser-frame .carousel-control-next {
+  width: 44px;
+  height: 44px;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  margin: 0 1rem;
+
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+/* Show arrows on hover */
+
+.browser-frame:hover .carousel-control-prev,
+.browser-frame:hover .carousel-control-next {
+  opacity: 1;
+}
+
+/* Make Bootstrap arrows dark */
+
+.browser-frame .carousel-control-prev-icon,
+.browser-frame .carousel-control-next-icon {
+  filter: invert(1);
+  width: 18px;
+  height: 18px;
+}
+
+/* Carousel indicators */
+
+.browser-frame .carousel-indicators {
+  margin-bottom: 1rem;
+}
+
+.browser-frame .carousel-indicators button {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+  border: 0;
+
+  background-color: #fff;
+
+  opacity: 0.5;
+}
+
+.browser-frame .carousel-indicators .active {
+  opacity: 1;
+}
+
+.screen-caption {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0.8rem 1rem;
+
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: var(--color-text);
+  background: #fff;
+}
+
+/* 01 scrolling*/
+/* =========================================
+   RESPONSIVE DEVICE SHOWCASE
+========================================= */
+
+.responsive-device-showcase {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  /* Leave room for overlapping phone */
+  padding: 1rem 4rem 4rem 0;
+}
+
+/* =========================================
+   DESKTOP DEVICE
+========================================= */
+
+.desktop-device {
+  position: relative;
+  width: 88%;
+
+  padding: 9px;
+
+  background: var(--color-semantic);
+
+  border-radius: 15px;
+
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.14);
+}
+
+.desktop-screen {
+  overflow: hidden;
+
+  background: #fff;
+
+  border-radius: 8px;
+}
+
+/* Desktop Browser Bar */
+
+.device-browser-bar {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  height: 38px;
+  padding: 0 12px;
+
+  background: #f5f3f0;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.device-browser-title {
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 0.65rem;
+
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/* Browser dots */
+
+.browser-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.browser-dots span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.22);
+}
+
+/* =========================================
+   SCROLLABLE CONTENT
+========================================= */
+
+.device-scroll {
+  height: 350px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  scrollbar-width: thin;
+  overscroll-behavior: contain;
+}
+
+.device-scroll img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+/* =========================================
+   MOBILE DEVICE
+========================================= */
+
+.mobile-device {
+  position: absolute;
+
+  width: 24%;
+
+  right: 0;
+  bottom: 0;
+
+  padding: 7px;
+
+  background: #242424;
+
+  border-radius: 26px;
+
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+
+  z-index: 2;
+}
+
+.mobile-screen {
+  overflow: hidden;
+
+  background: #fff;
+
+  border-radius: 20px;
+}
+
+.mobile-device .device-scroll {
+  height: 310px;
+}
+
+/* Phone notch */
+
+.mobile-notch {
+  position: absolute;
+
+  top: 12px;
+  left: 50%;
+
+  width: 34%;
+  height: 9px;
+
+  transform: translateX(-50%);
+
+  background: #242424;
+
+  border-radius: 10px;
+
+  z-index: 3;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 767.98px) {
+  .responsive-device-showcase {
+    padding: 1rem 2.5rem 3rem 0;
+  }
+
+  .desktop-device {
+    width: 92%;
+  }
+
+  .device-scroll {
+    height: 280px;
+  }
+
+  .mobile-device {
+    width: 27%;
+  }
+
+  .mobile-device .device-scroll {
+    height: 215px;
+  }
+}

@@ -24,3 +24,9 @@ yarn-error.log*
 # Optional: local backups / temporary files
 *.bak
 *.tmp
+
+# Eleventy build output
+_site/
+
+# Large source videos
+src/assets/videos/*.mov

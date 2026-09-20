@@ -1,5 +1,6 @@
 :root {
-  --font-heading: "Playfair Display", serif;
+  /* --font-heading: "Playfair Display", serif; */
+  --font-heading: "Neue Haas Grotesk display pro", sans-serif;
   --font-body: "Noto Sans", system-ui, -apple-system, sans-serif;
 
   --fs-h1: 3rem; /* 48px */
@@ -17,6 +18,8 @@
   --color-semantic: #afcbdf;
   --color-semantic-blue: #1e2a38;
   --color-semantic-brown: #2c2c2c;
+  --color-accent-dark: #ffb700;
+  --color-danger: #bd3900;
 
   /* --color-primary-light: #e2dede !important;
   --color-secondary-dark: #322826;
