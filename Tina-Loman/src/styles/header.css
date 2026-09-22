@@ -37,6 +37,9 @@
   line-height: 1.1;
   position: relative;
   padding: 0rem 1rem 0.5rem 1rem;
+  /* Remove default <a> styling */
+  color: inherit;
+  text-decoration: none;
 }
 
 .header-brand::before {
@@ -44,6 +47,14 @@
   position: absolute;
   inset: 0;
   border: 1.25px solid currentColor;
+}
+
+.header-brand:hover,
+.header-brand:focus,
+.header-brand:active,
+.header-brand:visited {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* --- logo --- */
