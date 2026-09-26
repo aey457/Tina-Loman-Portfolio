@@ -1,0 +1,51 @@
+/* =====================================================
+   ELEGANZA PROJECT THEME
+   Load AFTER project-detail.css.
+   Contains only Eleganza-specific visual identity.
+===================================================== */
+
+.project-theme--eleganza {
+  --project-feature-highlight-bg:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(199, 169, 163, 0.16) 0%,
+      rgba(133, 100, 93, 0.08) 28%,
+      transparent 52%
+    ),
+    radial-gradient(
+      circle at 10% 85%,
+      rgba(140, 148, 140, 0.1) 0%,
+      transparent 38%
+    ),
+    linear-gradient(135deg, #322826 0%, #3b3130 52%, #322826 100%);
+
+  --project-feature-development-bg:
+    radial-gradient(
+      circle at 12% 20%,
+      rgba(158, 219, 234, 0.08) 0%,
+      transparent 38%
+    ),
+    radial-gradient(
+      circle at 88% 78%,
+      rgba(199, 169, 163, 0.13) 0%,
+      transparent 44%
+    ),
+    linear-gradient(135deg, #322826 0%, #39302f 52%, #302725 100%);
+}
+
+/* Eleganza hero atmosphere */
+.project-theme--eleganza .project-hero--eleganza {
+  background:
+    radial-gradient(
+      circle at 82% 18%,
+      rgba(199, 169, 163, 0.8) 0%,
+      rgba(133, 100, 93, 0.55) 25%,
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 12% 85%,
+      rgba(140, 148, 140, 0.3) 0%,
+      transparent 42%
+    ),
+    linear-gradient(135deg, #322826 0%, #584d4d 50%, #85645d 100%);
+}

@@ -1,6 +1,6 @@
 :root {
-  /* --font-heading: "Playfair Display", serif; */
-  --font-heading: "Neue Haas Grotesk display pro", sans-serif;
+  --font-heading: "Playfair Display", serif;
+  /* --font-heading: "Neue Haas Grotesk display pro", sans-serif; */
   --font-body: "Noto Sans", system-ui, -apple-system, sans-serif;
 
   --fs-h1: 3rem; /* 48px */
@@ -182,28 +182,59 @@ main {
 }
 
 .btn-custom {
-  border-radius: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
   border: 1px solid var(--color-semantic-blue);
+  border-radius: 0;
+
   color: var(--color-text);
-  background: var(--color-bg);
+  background-color: var(--color-bg);
+
   text-decoration: none;
   text-align: center;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
+/* Small button */
+
 .btn-custom-xs {
+  width: 10rem;
+  min-height: 3rem;
+
+  padding: 0.5rem 1rem;
+
   font-size: var(--btn-xs);
   font-weight: 400;
-  display: inline-flex;
-  width: 10rem;
-  height: 3.5rem;
-  padding: 1rem 1.5rem;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
 }
+
+/* Hover */
 
 .btn-custom:hover {
   background-color: var(--color-secondary);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+/* Keyboard focus */
+
+.btn-custom:focus-visible {
+  outline: 2px solid var(--color-semantic-blue);
+  outline-offset: 3px;
+}
+
+/* Click / press */
+
+.btn-custom:active {
+  transform: translateY(1px);
 }
 
 .diamond {
