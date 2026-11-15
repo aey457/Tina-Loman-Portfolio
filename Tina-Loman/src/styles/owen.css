@@ -1,0 +1,95 @@
+/* =====================================================
+   OWEN PROJECT THEME
+   Load AFTER project-detail.css.
+===================================================== */
+
+:root {
+  /* Light backgrounds for OWEN sections */
+  --project-feature-highlight-bg: #f5f8fb;
+  --project-feature-development-bg: #f1f5f9;
+}
+
+/* =====================================================
+   01 / HERO
+===================================================== */
+
+.project-hero {
+  background:
+    radial-gradient(
+      circle at 85% 12%,
+      rgba(0, 102, 204, 0.06) 0%,
+      transparent 45%
+    ),
+    linear-gradient(135deg, #ffffff 0%, #f8fafc 55%, #f1f6fa 100%);
+
+  color: #243746;
+}
+
+/* =====================================================
+   02 / OWEN BUTTON
+===================================================== */
+
+.btn-custom--owen {
+  background-color: #0066cc;
+  color: #ffffff;
+  border: 2px solid #0066cc;
+}
+
+.btn-custom--owen:hover {
+  background-color: #00478f;
+  border-color: #00478f;
+  color: #ffffff;
+}
+
+.btn-custom--owen:focus-visible {
+  outline: 3px solid #f9c846;
+  outline-offset: 3px;
+}
+
+/* =====================================================
+   03 / PRODUCT SHOWCASE — LIGHT THEME
+===================================================== */
+
+.development-process.project-section--owen {
+  background: #f5f8fb;
+  color: #243746;
+}
+
+/* Override text colours inherited from dark sections */
+.project-section--owen h2,
+.project-section--owen h3,
+.project-section--owen h4 {
+  color: #17324f;
+}
+
+.project-section--owen p {
+  color: #475569;
+}
+
+.project-section--owen .description {
+  color: #52718b;
+}
+
+/* Keep the existing showcase layout */
+.project-section--owen .showcase-row {
+  border-bottom: 1px solid #dce5ed;
+}
+
+.project-section--owen .showcase-row:last-child {
+  border-bottom: none;
+}
+
+/* Browser frames */
+.project-section--owen .browser-frame {
+  background: #ffffff;
+  border: 1px solid #dce5ed;
+}
+
+/* Contributions */
+.project-section--owen .showcase-contribution {
+  color: #475569;
+}
+
+.project-section--owen .showcase-contribution strong {
+  color: #17324f;
+}
