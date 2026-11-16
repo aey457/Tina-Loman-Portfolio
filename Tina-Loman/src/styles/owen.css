@@ -93,3 +93,313 @@
 .project-section--owen .showcase-contribution strong {
   color: #17324f;
 }
+
+/* ==========================================
+   OWEN PRODUCT OVERVIEW
+========================================== */
+
+.owen-product-overview {
+  background: #f5f8fb;
+}
+
+/* Portal screenshots */
+.owen-product-overview .detail-section-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Ownership label */
+.owen-ownership-label {
+  color: #1766a0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+/* ==========================================
+   INTERNAL CMS CARD
+========================================== */
+
+.owen-cms-card {
+  padding: 2rem;
+  background: linear-gradient(145deg, #f0f3f6, #ffffff);
+  border: 1px solid #dce5ed;
+  border-radius: 16px;
+}
+
+.owen-cms-label {
+  display: block;
+  color: #64748b;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+}
+
+.owen-cms-card h3 {
+  color: #17324f;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.owen-cms-card p {
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* ==========================================
+   DESIGN CONTRIBUTION CARDS
+========================================== */
+
+.owen-impact-card {
+  height: 100%;
+  padding: 2rem;
+  background: linear-gradient(145deg, #f0f3f6, #ffffff);
+  border: 1px solid #dce5ed;
+  border-radius: 16px;
+}
+
+.owen-impact-number {
+  display: block;
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: #17324f;
+  margin-bottom: 1.25rem;
+}
+
+.owen-impact-card h3 {
+  font-size: 1.1rem;
+  color: #17324f;
+  margin-bottom: 0.75rem;
+}
+
+.owen-impact-card p {
+  color: #475569;
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 767.98px) {
+  .owen-cms-card,
+  .owen-impact-card {
+    padding: 1.5rem;
+  }
+}
+
+/* ==========================================
+   OWEN CHALLENGE METRIC
+========================================== */
+
+.owen-metric {
+  background: #ffffff;
+  border: 1px solid #dce5ed;
+  border-radius: 16px;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.owen-metric-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #52718b;
+  margin-bottom: 2rem;
+}
+
+.owen-metric-values {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(0.5rem, 1.5vw, 1.5rem);
+}
+
+.owen-metric-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.owen-metric-number {
+  font-size: clamp(2.25rem, 4vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+  color: #17324f;
+}
+
+.owen-metric-number--accent {
+  color: #1766a0;
+}
+
+.owen-metric-year {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-top: 0.5rem;
+}
+
+.owen-metric-arrow {
+  font-size: 1.5rem;
+  color: #94a3b8;
+}
+
+.owen-metric-description {
+  border-top: 1px solid #dce5ed;
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.owen-metric-source {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-bottom: 0;
+}
+
+/* Mobile */
+@media (max-width: 575.98px) {
+  .owen-metric {
+    padding: 1.25rem;
+  }
+
+  .owen-metric-number {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .owen-metric-year {
+    font-size: 0.75rem;
+  }
+
+  .owen-metric-arrow {
+    font-size: 1.125rem;
+  }
+}
+
+/* OWEN Design Approach */
+
+.owen-design-approach .delivery-process {
+  width: 100%;
+}
+
+/* Keep cards equal height */
+.owen-design-approach .delivery-card {
+  height: 100%;
+}
+
+/* Prevent long process labels from overflowing */
+.owen-design-approach .process-label {
+  white-space: normal;
+}
+
+/* Agile note */
+.owen-agile-note {
+  font-size: 0.875rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   OWEN — Key Design Solutions
+========================================== */
+
+/* Browser Frame & Carousel Layout */
+.owen-solutions .dynamic-data-visual,
+.owen-solutions .browser-frame,
+.owen-solutions .owen-feature-carousel {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+}
+
+/* Scrollable Figma Screenshots */
+.owen-solutions .carousel-image-stage {
+  display: block;
+  width: 100%;
+  height: 430px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #f5f8fb;
+  scrollbar-width: thin;
+  overscroll-behavior: contain;
+}
+
+.owen-solutions .carousel-image-stage img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  object-fit: contain;
+}
+
+/* Pain Point Container */
+.owen-solutions .owen-pain-points {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0.8rem 0 1rem;
+}
+
+/* Pain Point Label */
+.owen-solutions .owen-pain-points-label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #64748b;
+  margin-right: 0.15rem;
+}
+
+/* Pain Point Tags */
+.owen-solutions .owen-pain-tag {
+  display: inline-block;
+  padding: 0.28rem 0.65rem;
+  border: 1px solid #e8b4bc;
+  border-radius: 999px;
+  background: #fcecef;
+  color: #9f3347;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* Section Spacing */
+.owen-solutions {
+  padding-bottom: 7rem;
+}
+
+.owen-solutions .feature-development-row:last-child {
+  padding-bottom: 2rem;
+}
+
+/* ==========================================
+   Responsive — Mobile
+========================================== */
+
+@media (max-width: 767.98px) {
+  .owen-solutions {
+    padding-bottom: 4rem;
+  }
+
+  .owen-solutions .carousel-image-stage {
+    height: 300px;
+  }
+}
+
+/* ==========================================
+   Accessibility — Reduced Motion
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .owen-solutions .carousel-item {
+    transition: none !important;
+  }
+}
