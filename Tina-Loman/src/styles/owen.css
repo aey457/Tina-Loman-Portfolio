@@ -403,3 +403,385 @@
     transition: none !important;
   }
 }
+
+/* ==========================================
+   SECTION 04 — USABILITY TESTING & ITERATION
+   ========================================== */
+
+/* Research activities */
+
+.owen-usability .owen-research-activities h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.owen-usability .owen-research-activities ul {
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+}
+
+.owen-usability .owen-research-activities li {
+  margin-bottom: 0.65rem;
+  line-height: 1.65;
+}
+
+/* Participant feedback panel */
+
+.owen-usability .owen-feedback-panel {
+  background: #f6f8fb;
+  border: 1px solid #e7ebf0;
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.owen-usability .owen-feedback-header {
+  margin-bottom: 1.5rem;
+}
+
+.owen-usability .owen-feedback-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+.owen-usability .owen-feedback-header h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.owen-usability .owen-feedback-header > p:last-child {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 0;
+}
+
+/* Quote cards */
+
+.owen-usability .owen-quotes {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.owen-usability .owen-quote-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e5eaf0;
+  border-radius: 12px;
+  padding: 1.4rem 1.5rem;
+  margin: 0;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+@media (hover: hover) {
+  .owen-usability .owen-quote-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  }
+}
+
+.owen-usability .owen-quote-mark {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 2.8rem;
+  line-height: 0.8;
+  color: #a9b8cc;
+  margin-bottom: 0.65rem;
+}
+
+.owen-usability .owen-quote-card blockquote {
+  margin: 0 0 1.1rem;
+  padding: 0;
+  border: 0;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #263449;
+  font-style: italic;
+}
+
+.owen-usability .owen-quote-card figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.owen-usability .owen-quote-category {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #506782;
+  background: #edf2f8;
+  border-radius: 999px;
+  padding: 0.3rem 0.65rem;
+}
+
+.owen-usability .owen-quote-source {
+  font-size: 0.72rem;
+  color: #64748b;
+}
+
+/* Small note */
+
+.owen-usability .owen-feedback-note {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #64748b;
+  margin: 1rem 0 0;
+}
+
+/* Responsive */
+
+@media (max-width: 991.98px) {
+  .owen-usability .owen-feedback-panel {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .owen-usability .owen-feedback-panel {
+    padding: 1.25rem;
+  }
+
+  .owen-usability .owen-feedback-header h3 {
+    font-size: 1.2rem;
+  }
+
+  .owen-usability .owen-quote-card {
+    padding: 1.15rem;
+  }
+
+  .owen-usability .owen-quote-card blockquote {
+    font-size: 0.9rem;
+  }
+
+  .owen-usability .owen-quote-card figcaption {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .owen-usability .owen-quote-card {
+    transition: none;
+  }
+}
+
+/* ==========================================
+   SELECTED DESIGN ITERATIONS
+   ========================================== */
+
+.owen-usability .owen-iterations {
+  margin-top: 5rem;
+}
+
+/* Section introduction */
+
+.owen-usability .owen-iterations-intro {
+  max-width: 760px;
+  margin-bottom: 3.5rem;
+}
+
+.owen-usability .owen-iterations-intro h2 {
+  margin-bottom: 1rem;
+}
+
+.owen-usability .owen-iterations-intro > p:last-child {
+  color: #64748b;
+  line-height: 1.75;
+}
+
+/* Individual case */
+
+.owen-usability .owen-iteration-case {
+  padding: 3rem 0;
+}
+
+.owen-usability .owen-iteration-case + .owen-iteration-case {
+  border-top: 1px solid #e5eaf0;
+  margin-top: 1rem;
+}
+
+.owen-usability .owen-iteration-number {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 0.8rem;
+}
+
+.owen-usability .owen-iteration-title {
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.35;
+  margin-bottom: 1.75rem;
+}
+
+/* Storytelling */
+
+.owen-usability .owen-iteration-story {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.owen-usability .owen-story-item h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: #334155;
+}
+
+.owen-usability .owen-story-item p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #475569;
+  margin-bottom: 0;
+}
+
+/* Comparison panel */
+
+.owen-usability .owen-comparison {
+  background: #f6f8fb;
+  border: 1px solid #e7ebf0;
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.owen-usability .owen-comparison-header {
+  margin-bottom: 1.5rem;
+}
+
+.owen-usability .owen-comparison-header h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.owen-usability .owen-comparison-header p {
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Two-column comparison */
+
+.owen-usability .owen-comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.owen-usability .owen-comparison-item {
+  min-width: 0;
+  margin: 0;
+}
+
+.owen-usability .owen-comparison-label {
+  margin-bottom: 0.7rem;
+}
+
+.owen-usability .owen-option-badge {
+  display: inline-block;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: #e8edf5;
+  color: #415875;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.owen-usability .owen-option-badge.is-refined {
+  background: #e5f2ec;
+  color: #2d6b52;
+}
+
+/* Screenshot frame */
+
+.owen-usability .owen-comparison-item a {
+  display: block;
+  overflow: hidden;
+  border: 1px solid #dce3ec;
+  border-radius: 10px;
+  background: #ffffff;
+  transition: box-shadow 0.2s ease;
+}
+
+.owen-usability .owen-comparison-item a:hover {
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.1);
+}
+
+.owen-usability .owen-comparison-item a:focus-visible {
+  outline: 3px solid #4c83c3;
+  outline-offset: 3px;
+}
+
+.owen-usability .owen-comparison-item img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* Captions */
+
+.owen-usability .owen-comparison-item figcaption {
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: #64748b;
+  margin-top: 0.7rem;
+}
+
+.owen-usability .owen-comparison-note {
+  font-size: 0.72rem;
+  color: #64748b;
+  margin: 1.2rem 0 0;
+}
+
+/* Responsive */
+
+@media (max-width: 991.98px) {
+  .owen-usability .owen-iterations {
+    margin-top: 4rem;
+  }
+
+  .owen-usability .owen-iteration-case {
+    padding: 2.5rem 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .owen-usability .owen-comparison {
+    padding: 1rem;
+  }
+
+  .owen-usability .owen-comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .owen-usability .owen-comparison-item img {
+    height: 220px;
+  }
+
+  .owen-usability .owen-iterations-intro {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .owen-usability .owen-comparison-item a {
+    transition: none;
+  }
+}
