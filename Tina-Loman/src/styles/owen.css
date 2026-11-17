@@ -785,3 +785,279 @@
     transition: none;
   }
 }
+
+/* =====================================================
+   05 / DISCOVERY ARTIFACTS & RESULTS
+   Aligned with existing OWEN styling and project-detail.css.
+===================================================== */
+
+/* Discovery: optional artifact evidence */
+.owen-design-approach .owen-artifacts > h3 {
+  margin-bottom: 0.75rem;
+}
+.owen-artifacts__intro {
+  max-width: 720px;
+}
+.owen-artifact {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(80, 94, 115, 0.17);
+  border-radius: 16px;
+  background: #fff;
+}
+.owen-artifact figcaption {
+  padding: 1.25rem 1.4rem;
+}
+.owen-artifact figcaption h4 {
+  font-size: 1.05rem;
+  margin-bottom: 0.45rem;
+}
+.owen-artifact figcaption p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+.owen-artifacts__note {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+
+/* Results: intentionally use the existing storytelling section rhythm. */
+.owen-results {
+  background: transparent;
+}
+.owen-results-lead {
+  max-width: 720px;
+}
+.owen-results-block {
+  padding: 3.25rem 0;
+  border-top: 1px solid rgba(80, 94, 115, 0.18);
+}
+.owen-results-kicker {
+  margin-bottom: 0.8rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.095em;
+  text-transform: uppercase;
+  opacity: 0.68;
+}
+.owen-results-block h3,
+.owen-results-status h3 {
+  margin-bottom: 1.2rem;
+}
+.owen-results-block p {
+  max-width: 65ch;
+}
+.owen-results-deliverables {
+  border-top: 1px solid rgba(80, 94, 115, 0.16);
+}
+.owen-results-deliverable {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 1rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid rgba(80, 94, 115, 0.16);
+}
+.owen-results-deliverable > span {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  font-weight: 700;
+}
+.owen-results-deliverable h4 {
+  font-size: 1.06rem;
+  margin: 0 0 0.3rem;
+}
+.owen-results-deliverable p {
+  font-size: 0.94rem;
+  margin: 0;
+}
+
+.owen-results-assessment {
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border-radius: 18px;
+  background: #f0f4f8;
+  border: 1px solid rgba(80, 94, 115, 0.12);
+}
+.owen-results-assessment__label {
+  font-size: 0.73rem;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  opacity: 0.7;
+}
+.owen-results-assessment__number {
+  font-size: clamp(4rem, 8vw, 6.5rem);
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  margin: 1rem 0 0.4rem;
+  font-variant-numeric: tabular-nums;
+}
+.owen-results-assessment__number span {
+  font-size: 0.43em;
+  opacity: 0.6;
+  letter-spacing: -0.02em;
+}
+.owen-results-assessment__caption {
+  font-weight: 600;
+  margin-bottom: 1.15rem;
+}
+.owen-results-assessment__track {
+  height: 8px;
+  border-radius: 20px;
+  background: #d4dfe9;
+  overflow: hidden;
+}
+.owen-results-assessment__track span {
+  display: block;
+  width: 84.615%;
+  height: 100%;
+  background: #416d88;
+  border-radius: inherit;
+}
+.owen-results-assessment__note {
+  margin: 0.9rem 0 0;
+  font-size: 0.86rem;
+  opacity: 0.7;
+}
+
+.owen-results-learning {
+  padding: 1.5rem;
+  border: 1px solid rgba(80, 94, 115, 0.16);
+  border-radius: 14px;
+  background: #fff;
+}
+.owen-results-learning__number {
+  display: block;
+  margin-bottom: 1.1rem;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+.owen-results-learning h4 {
+  font-size: 1.13rem;
+  margin-bottom: 0.6rem;
+}
+.owen-results-learning p {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+.owen-results-status {
+  padding: 2rem 0 0;
+  border-top: 1px solid rgba(80, 94, 115, 0.18);
+}
+.owen-results-status p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 767.98px) {
+  .owen-results-block {
+    padding: 2.5rem 0;
+  }
+  .owen-results-assessment {
+    padding: 1.5rem;
+  }
+}
+
+/* =====================================================
+   SECTION 02 — SELECTED DESIGN ARTIFACTS
+===================================================== */
+.owen-design-approach .owen-artifacts {
+  width: 100%;
+  min-width: 0;
+}
+
+.owen-design-approach .owen-artifacts > .row > [class*="col-"] {
+  min-width: 0;
+}
+
+.owen-design-approach .owen-artifact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+}
+
+.owen-design-approach .owen-artifact__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #f0f4f8;
+  border-bottom: 1px solid #dce5ed;
+}
+
+.owen-design-approach .owen-artifact__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.owen-design-approach .owen-artifact figcaption {
+  flex: 1;
+}
+
+@media (max-width: 575.98px) {
+  .owen-design-approach .owen-artifact__image {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* Section 03 — Key Design Solutions: text colours */
+
+.owen-solutions > .container > .row:first-child .description {
+  color: #64748b;
+}
+
+.owen-solutions > .container > .row:first-child h2 {
+  color: #334155;
+}
+
+.owen-solutions > .container > .row:first-child .feature-development-intro {
+  color: #64748b;
+}
+
+/* ==========================================
+   SECTION 03 — KEY DESIGN SOLUTIONS
+   Restore original text colours
+========================================== */
+
+/* Section heading and all solution headings */
+.owen-solutions h2,
+.owen-solutions h3,
+.owen-solutions h4 {
+  color: #334155;
+}
+
+/* Body paragraphs */
+.owen-solutions p,
+.owen-solutions .feature-development-intro,
+.owen-solutions .feature-detail-point p {
+  color: #64748b;
+}
+
+/* Solution numbers: 01, 02, 03 */
+.owen-solutions .feature-detail-number {
+  color: #64748b;
+}
+
+/* Addresses label */
+.owen-solutions .owen-pain-points-label {
+  color: #64748b;
+}
+
+/* Keep pain-point tags in their original rose colours */
+.owen-solutions .owen-pain-tag {
+  color: #9f3347;
+}
+
+/* Browser frame headings remain readable */
+.owen-solutions .browser-address,
+.owen-solutions .screen-caption {
+  color: #475569;
+}
