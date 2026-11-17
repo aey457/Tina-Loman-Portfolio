@@ -1,0 +1,145 @@
+/* Neurofit-specific additions to project-detail.css. Load after shared CSS. */
+.project-theme--neurofit {
+  --nf-primary: #5b2bce;
+  --nf-bright: #954eff;
+  --nf-lavender: #b8b4d4;
+  --nf-ink: #322826;
+  --project-feature-highlight-bg:
+    radial-gradient(
+      circle at 82% 18%,
+      rgba(149, 78, 255, 0.22),
+      transparent 45%
+    ),
+    linear-gradient(135deg, #21133e, #372064 55%, #231541);
+  --project-feature-development-bg:
+    radial-gradient(
+      circle at 14% 85%,
+      rgba(184, 180, 212, 0.18),
+      transparent 40%
+    ),
+    linear-gradient(135deg, #261549, #3e226c 55%, #271749);
+}
+.project-theme--neurofit .project-hero--neurofit {
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(149, 78, 255, 0.8),
+      transparent 52%
+    ),
+    radial-gradient(
+      circle at 15% 80%,
+      rgba(184, 180, 212, 0.45),
+      transparent 45%
+    ),
+    linear-gradient(135deg, #2d175a, #5b2bce 65%, #422289);
+}
+.project-theme--neurofit .nf-insight-card,
+.project-theme--neurofit .nf-result-card {
+  border-color: rgba(91, 43, 206, 0.18);
+  background: linear-gradient(
+    135deg,
+    rgba(184, 180, 212, 0.15),
+    rgba(255, 255, 255, 0.7)
+  );
+}
+.project-theme--neurofit .nf-insight-card h3 {
+  font-size: 1.15rem;
+  margin: 1rem 0 0.65rem;
+}
+.project-theme--neurofit .nf-insight-card p,
+.project-theme--neurofit .nf-result-card p {
+  margin: 0;
+  line-height: 1.7;
+}
+.project-theme--neurofit .nf-result-card .card-label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--nf-primary);
+}
+.project-theme--neurofit .nf-research-panel {
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+}
+.project-theme--neurofit .nf-research-panel > span,
+.project-theme--neurofit .nf-decision-list span {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  opacity: 0.75;
+  margin-bottom: 1.2rem;
+}
+.project-theme--neurofit .nf-research-steps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.project-theme--neurofit .nf-research-steps > div {
+  padding: 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.09);
+  line-height: 1.5;
+}
+.project-theme--neurofit .nf-decision-list > div {
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid var(--nf-primary);
+  background: #f7f4fc;
+  margin-bottom: 1rem;
+  border-radius: 0 12px 12px 0;
+}
+.project-theme--neurofit .nf-decision-list h3 {
+  font-size: 1.15rem;
+  margin: 0 0 0.5rem;
+}
+.project-theme--neurofit .nf-decision-list p {
+  margin: 0;
+  line-height: 1.6;
+}
+.project-theme--neurofit .nf-editorial-note {
+  padding: 1rem 1.25rem;
+  border-left: 3px solid #e7730d;
+  background: #fff8ef;
+  font-size: 0.9rem;
+}
+.project-theme--neurofit .nf-artifact-placeholder {
+  min-height: 320px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 2rem;
+  border: 2px dashed #b8b4d4;
+  background: #f7f5fc;
+  border-radius: 12px;
+  color: #474747;
+}
+.project-theme--neurofit .nf-system-figure {
+  margin: 0;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  padding: 1rem;
+}
+.project-theme--neurofit .nf-system-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.project-theme--neurofit .nf-system-figure figcaption {
+  color: #474747;
+}
+.project-theme--neurofit .feature-development-section .feature-detail-point h4,
+.project-theme--neurofit .feature-development-section .feature-detail-point p {
+  color: rgba(255, 255, 255, 0.88);
+}
+@media (max-width: 767.98px) {
+  .project-theme--neurofit .nf-research-steps {
+    grid-template-columns: 1fr;
+  }
+  .project-theme--neurofit .nf-research-panel {
+    padding: 1.25rem;
+  }
+}
