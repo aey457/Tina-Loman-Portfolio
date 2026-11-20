@@ -143,3 +143,844 @@
     padding: 1.25rem;
   }
 }
+
+/* Neurofit — Challenge Objectives */
+
+.project-theme--neurofit .nf-challenge-objectives {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.project-theme--neurofit .nf-challenge-objective {
+  padding-left: 1.25rem;
+  border-left: 3px solid #954eff;
+}
+
+.project-theme--neurofit .nf-challenge-objective .description {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #5b2bce;
+}
+
+.project-theme--neurofit .nf-challenge-objective p {
+  margin: 0;
+}
+
+/* =========================================
+   NEUROFIT / RESEARCH VISUALS
+========================================= */
+
+.project-theme--neurofit .nf-visual-caption {
+  margin-top: 1.25rem;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  opacity: 0.7;
+}
+
+.project-theme--neurofit .nf-competitive-visuals {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.project-theme--neurofit .nf-visual-placeholder {
+  margin: 0;
+}
+
+.project-theme--neurofit .nf-visual-placeholder__content {
+  min-height: 210px;
+  padding: 1.25rem;
+  border: 1px dashed rgba(184, 180, 212, 0.5);
+  border-radius: 0.75rem;
+  background: rgba(184, 180, 212, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.75rem;
+}
+
+.project-theme--neurofit .nf-visual-placeholder__content span {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.project-theme--neurofit .nf-visual-placeholder__content p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.project-theme--neurofit .nf-visual-placeholder figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+/* =========================================
+   RESEARCH FINDINGS
+========================================= */
+
+.project-theme--neurofit .nf-findings-section {
+  background: #fffdfd;
+}
+
+.project-theme--neurofit .nf-finding {
+  padding: 4rem 0;
+  border-bottom: 1px solid rgba(50, 40, 38, 0.12);
+}
+
+.project-theme--neurofit .nf-finding:last-child {
+  border-bottom: none;
+}
+
+.project-theme--neurofit .nf-finding h3 {
+  margin-bottom: 1.25rem;
+}
+
+.project-theme--neurofit .nf-finding-implication {
+  margin-top: 1.5rem;
+  padding-left: 1.25rem;
+  border-left: 3px solid #954eff;
+}
+
+.project-theme--neurofit .nf-finding-implication strong {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  color: #5b2bce;
+}
+
+.project-theme--neurofit .nf-evidence-card {
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #f0ecec;
+}
+
+.project-theme--neurofit .nf-evidence-card > span {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: #5b2bce;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.project-theme--neurofit .nf-evidence-placeholder {
+  min-height: 220px;
+  margin-top: 1.5rem;
+  padding: 2rem;
+  border: 1px dashed rgba(50, 40, 38, 0.25);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #665e63;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Audience Comparison */
+
+.project-theme--neurofit .nf-audience-comparison {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.project-theme--neurofit .nf-audience-card {
+  padding: 1.75rem;
+  border-radius: 0.9rem;
+  background: #f0ecec;
+}
+
+.project-theme--neurofit .nf-audience-card span {
+  display: block;
+  margin-bottom: 1rem;
+  color: #5b2bce;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.project-theme--neurofit .nf-audience-card h4 {
+  margin-bottom: 0.75rem;
+}
+
+.project-theme--neurofit .nf-audience-card p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* =========================================
+   DESIGN STRATEGY
+========================================= */
+
+.project-theme--neurofit .nf-strategy-section {
+  background: #5b2bce;
+  color: #ffffff;
+}
+
+.project-theme--neurofit .nf-strategy-section h2,
+.project-theme--neurofit .nf-strategy-section h3 {
+  color: #ffffff;
+}
+
+.project-theme--neurofit .nf-strategy-section .description {
+  color: #e5d8ff;
+}
+
+.project-theme--neurofit .nf-strategy-intro {
+  max-width: 750px;
+  margin: 1.5rem auto 0;
+  color: #f2ebff;
+  line-height: 1.8;
+}
+
+.project-theme--neurofit .nf-strategy-card {
+  height: 100%;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.project-theme--neurofit .nf-strategy-card span {
+  display: block;
+  margin-bottom: 1.25rem;
+  color: #e5d8ff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.project-theme--neurofit .nf-strategy-card p {
+  color: #f2ebff;
+  margin-bottom: 0;
+}
+
+.project-theme--neurofit .nf-strategy-outcome {
+  color: #e5d8ff;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 767.98px) {
+  .project-theme--neurofit .nf-competitive-visuals,
+  .project-theme--neurofit .nf-audience-comparison {
+    grid-template-columns: 1fr;
+  }
+
+  .project-theme--neurofit .nf-finding {
+    padding: 2.75rem 0;
+  }
+
+  .project-theme--neurofit .nf-evidence-card {
+    padding: 1.25rem;
+  }
+
+  .project-theme--neurofit .nf-strategy-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Neurofit research additions — scoped to the existing project theme */
+.project-theme--neurofit .nf-research-visual {
+  color: #322826;
+  background: #fffdfd;
+  border: 1px solid #e5e0ee;
+  border-radius: 20px;
+  padding: clamp(18px, 3vw, 32px);
+  box-shadow: 0 12px 35px rgba(50, 40, 38, 0.06);
+}
+.project-theme--neurofit .nf-diagram-kicker {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #5b2bce;
+  margin-bottom: 12px;
+}
+.project-theme--neurofit .nf-diagram-title {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 750;
+  line-height: 1.35;
+  margin: 0 0 18px;
+  color: #322826;
+}
+.project-theme--neurofit .nf-rq-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.project-theme--neurofit .nf-rq {
+  border: 1px solid #e1d7f4;
+  background: #f6f2fc;
+  border-radius: 12px;
+  padding: 14px;
+  min-width: 0;
+}
+.project-theme--neurofit .nf-rq b {
+  display: block;
+  color: #5b2bce;
+  font-size: 0.76rem;
+  margin-bottom: 6px;
+}
+.project-theme--neurofit .nf-rq p {
+  margin: 0;
+  color: #51465a;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+.project-theme--neurofit .nf-diagram-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7954b7;
+  font-size: 1.35rem;
+  line-height: 1;
+  padding: 8px 0;
+}
+.project-theme--neurofit .nf-method-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.project-theme--neurofit .nf-method-column {
+  border: 1px solid #e5e0ee;
+  border-radius: 14px;
+  padding: 18px;
+  min-width: 0;
+}
+.project-theme--neurofit .nf-method-column--primary {
+  border-color: #d2b6ff;
+  background: #f9f6ff;
+}
+.project-theme--neurofit .nf-method-column h5 {
+  font-size: 0.94rem;
+  margin: 0 0 5px;
+  color: #322826;
+}
+.project-theme--neurofit .nf-method-column > p {
+  font-size: 0.77rem;
+  color: #71697a;
+  margin: 0 0 12px;
+}
+.project-theme--neurofit .nf-method-line {
+  padding: 9px 0;
+  border-top: 1px solid #eae5f0;
+}
+.project-theme--neurofit .nf-method-line strong {
+  display: block;
+  font-size: 0.82rem;
+  color: #322826;
+}
+.project-theme--neurofit .nf-method-line span {
+  display: block;
+  font-size: 0.76rem;
+  color: #665c6c;
+  line-height: 1.45;
+  margin-top: 3px;
+}
+.project-theme--neurofit .nf-synthesis-node {
+  background: #5b2bce;
+  color: white;
+  border-radius: 14px;
+  text-align: center;
+  padding: 17px;
+}
+.project-theme--neurofit .nf-synthesis-node strong {
+  display: block;
+  font-size: 1rem;
+}
+.project-theme--neurofit .nf-synthesis-node span {
+  display: block;
+  font-size: 0.8rem;
+  line-height: 1.55;
+  margin-top: 4px;
+  color: #f1e9ff;
+}
+.project-theme--neurofit .nf-visual-note {
+  font-size: 0.76rem;
+  line-height: 1.6;
+  color: #746b79;
+  margin: 13px 0 0;
+}
+.project-theme--neurofit .nf-limitations {
+  border-left: 3px solid #e7730d;
+  padding: 14px 18px;
+  background: #fff8ef;
+  border-radius: 0 12px 12px 0;
+  margin-top: 20px;
+  color: #493a30;
+}
+.project-theme--neurofit .nf-limitations h4 {
+  font-size: 1rem;
+  color: #563314;
+  margin: 0 0 8px;
+}
+.project-theme--neurofit .nf-limitations p {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  margin: 0 0 8px;
+}
+.project-theme--neurofit .nf-limitations p:last-child {
+  margin-bottom: 0;
+}
+.project-theme--neurofit .nf-quality-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 18px 0;
+}
+.project-theme--neurofit .nf-quality-item {
+  background: #f7f4fb;
+  border-radius: 12px;
+  padding: 15px;
+}
+.project-theme--neurofit .nf-quality-item strong {
+  display: block;
+  color: #5b2bce;
+  font-size: 0.84rem;
+  margin-bottom: 6px;
+}
+.project-theme--neurofit .nf-quality-item p {
+  margin: 0;
+  color: #51465a;
+  font-size: 0.79rem;
+  line-height: 1.55;
+}
+.project-theme--neurofit .nf-evidence-table-wrap {
+  overflow-x: auto;
+  border: 1px solid #e5e0ee;
+  border-radius: 14px;
+}
+.project-theme--neurofit .nf-evidence-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 570px;
+  color: #322826;
+  font-size: 0.82rem;
+}
+.project-theme--neurofit .nf-evidence-table th {
+  background: #eee8f9;
+  text-align: left;
+  color: #4d288e;
+  font-size: 0.76rem;
+  letter-spacing: 0.02em;
+  padding: 13px 12px;
+}
+.project-theme--neurofit .nf-evidence-table td {
+  padding: 14px 12px;
+  vertical-align: top;
+  border-top: 1px solid #eae5f0;
+  line-height: 1.55;
+}
+.project-theme--neurofit .nf-evidence-table td:first-child {
+  font-weight: 700;
+  width: 24%;
+}
+.project-theme--neurofit .nf-evidence-table td:nth-child(2) {
+  width: 35%;
+}
+.project-theme--neurofit .nf-evidence-table tr:nth-child(even) td {
+  background: #fcfaff;
+}
+.project-theme--neurofit .nf-research-insert {
+  margin: 32px 0;
+}
+.project-theme--neurofit .nf-research-insert > p {
+  line-height: 1.75;
+}
+@media (max-width: 767px) {
+  .project-theme--neurofit .nf-rq-list {
+    grid-template-columns: 1fr;
+  }
+  .project-theme--neurofit .nf-method-columns,
+  .project-theme--neurofit .nf-quality-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-theme--neurofit .nf-research-visual {
+    padding: 18px;
+  }
+}
+
+/* ==========================================
+   NEUROFIT / RESEARCH SYNTHESIS DIAGRAM
+========================================== */
+
+.project-theme--neurofit .nf-synthesis-panel h4 {
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-theme--neurofit .nf-diagram-intro {
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+/* Diagram canvas */
+
+.project-theme--neurofit .nf-synthesis-diagram {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 340 / 290;
+  margin: 1.5rem auto;
+}
+
+/* Four research method cards */
+
+.project-theme--neurofit .nf-diagram-card {
+  position: absolute;
+  z-index: 2;
+  width: 42%;
+  min-height: 25%;
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  background: #ece6fa;
+  color: #4e278f;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-theme--neurofit .nf-diagram-card strong {
+  font-size: clamp(0.68rem, 1.4vw, 0.85rem);
+  line-height: 1.35;
+}
+
+.project-theme--neurofit .nf-diagram-card p {
+  margin: 0.4rem 0 0;
+  font-size: clamp(0.6rem, 1.2vw, 0.75rem);
+  line-height: 1.4;
+}
+
+/* Positions */
+
+.project-theme--neurofit .nf-diagram-audit {
+  top: 0;
+  left: 0;
+}
+
+.project-theme--neurofit .nf-diagram-analytics {
+  top: 0;
+  right: 0;
+}
+
+.project-theme--neurofit .nf-diagram-competitor {
+  bottom: 0;
+  left: 0;
+}
+
+.project-theme--neurofit .nf-diagram-literature {
+  bottom: 0;
+  right: 0;
+}
+
+/* Connecting lines */
+
+.project-theme--neurofit .nf-diagram-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.project-theme--neurofit .nf-diagram-lines path {
+  fill: none;
+  stroke: #b8b4d4;
+  stroke-width: 1.5;
+}
+
+/* Centre synthesis node */
+
+.project-theme--neurofit .nf-diagram-centre {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 34%;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+  background: #5b2bce;
+  color: #fff;
+  border: 4px solid #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem;
+  box-shadow: 0 5px 18px rgba(91, 43, 206, 0.2);
+}
+
+.project-theme--neurofit .nf-diagram-centre strong {
+  font-size: clamp(0.72rem, 1.5vw, 0.95rem);
+  line-height: 1.25;
+}
+
+.project-theme--neurofit .nf-diagram-centre span {
+  font-size: clamp(0.52rem, 1vw, 0.68rem);
+  line-height: 1.3;
+  margin-top: 0.4rem;
+  color: #eee4ff;
+}
+
+/* Primary research note */
+
+.project-theme--neurofit .nf-diagram-context {
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(184, 180, 212, 0.3);
+}
+
+.project-theme--neurofit .nf-diagram-context h5 {
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+}
+
+.project-theme--neurofit .nf-diagram-context p {
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+/* Mobile */
+
+@media (max-width: 575.98px) {
+  .project-theme--neurofit .nf-synthesis-diagram {
+    aspect-ratio: 340 / 330;
+  }
+
+  .project-theme--neurofit .nf-diagram-card {
+    width: 44%;
+    padding: 0.5rem;
+  }
+
+  .project-theme--neurofit .nf-diagram-centre {
+    width: 38%;
+  }
+
+  .project-theme--neurofit .nf-diagram-centre span {
+    display: none;
+  }
+}
+/* Additive styles ONLY for Research Strategy enhancements; preserve your existing diagram CSS. */
+.project-theme--neurofit .nf-research-strategy-intro {
+  margin-bottom: 2.25rem;
+}
+.project-theme--neurofit .nf-research-strategy-intro > p:not(.description) {
+  max-width: 900px;
+  line-height: 1.75;
+}
+.project-theme--neurofit .nf-rq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.project-theme--neurofit .nf-rq-card {
+  border-left: 3px solid #a68add;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 0.5rem;
+  padding: 1.15rem;
+  min-width: 0;
+}
+.project-theme--neurofit .nf-rq-card span {
+  display: block;
+  font-size: 0.77rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #d7c2ff;
+  margin-bottom: 0.65rem;
+}
+.project-theme--neurofit .nf-rq-card p {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  margin: 0;
+}
+.project-theme--neurofit .nf-research-method-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin: 1rem 0 0.65rem;
+}
+.project-theme--neurofit .nf-research-method-label strong {
+  font-size: 0.92rem;
+}
+.project-theme--neurofit .nf-research-method-label span {
+  font-size: 0.76rem;
+  opacity: 0.8;
+}
+.project-theme--neurofit .nf-research-bridge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 1.15rem 0;
+  font-size: 0.82rem;
+}
+.project-theme--neurofit .nf-research-bridge span:first-child {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #5b2bce;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.project-theme--neurofit .nf-primary-method-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin: 0.75rem 0;
+}
+.project-theme--neurofit .nf-primary-method-list span {
+  padding: 0.75rem 0.5rem;
+  border: 1px solid rgba(166, 138, 221, 0.4);
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 650;
+}
+.project-theme--neurofit .nf-cross-method-outcome {
+  margin-top: 1.2rem;
+  padding: 1rem 1.2rem;
+  border-radius: 0.75rem;
+  background: #5b2bce;
+  color: #fff;
+  text-align: center;
+}
+.project-theme--neurofit .nf-cross-method-outcome p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin: 0.35rem 0 0;
+  color: #eee7ff;
+}
+.project-theme--neurofit .nf-rq-evidence-map {
+  margin: 2.5rem 0 1rem;
+}
+.project-theme--neurofit .nf-rq-evidence-map > p {
+  line-height: 1.7;
+  max-width: 850px;
+}
+.project-theme--neurofit .nf-rq-map-list {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+}
+.project-theme--neurofit .nf-rq-map-item {
+  padding: 1rem 1.2rem;
+  border: 1px solid rgba(166, 138, 221, 0.35);
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.06);
+}
+.project-theme--neurofit .nf-rq-map-item strong {
+  font-size: 0.88rem;
+}
+.project-theme--neurofit .nf-rq-map-item p {
+  font-size: 0.84rem;
+  line-height: 1.65;
+  margin: 0.45rem 0 0;
+}
+.project-theme--neurofit .nf-rq-map-item p span {
+  font-weight: 700;
+  color: #d7c2ff;
+  padding: 0 0.4rem;
+}
+@media (max-width: 767.98px) {
+  .project-theme--neurofit .nf-rq-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-theme--neurofit .nf-primary-method-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card title */
+.project-theme--neurofit .nf-synthesis-diagram .nf-diagram-card strong {
+  color: #442080;
+}
+
+/* Card description */
+.project-theme--neurofit .nf-synthesis-diagram .nf-diagram-card p {
+  color: #65558b;
+}
+
+/* Neurofit / Primary Research Artifact */
+
+.project-theme--neurofit .nf-primary-artifact {
+  margin: 1.25rem 0 1.5rem;
+}
+
+.project-theme--neurofit .nf-primary-artifact img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.project-theme--neurofit .nf-primary-artifact figcaption {
+  margin-top: 0.75rem;
+  line-height: 1.6;
+}
+
+.project-theme--neurofit .nf-primary-methods {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.project-theme--neurofit .nf-primary-methods > div {
+  padding: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.project-theme--neurofit .nf-primary-methods strong {
+  display: block;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.project-theme--neurofit .nf-primary-methods p {
+  margin: 0.35rem 0 0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.project-theme--neurofit .nf-primary-note {
+  margin: 1.25rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.65;
+  opacity: 0.8;
+}
+
+@media (max-width: 575.98px) {
+  .project-theme--neurofit .nf-primary-methods {
+    grid-template-columns: 1fr;
+  }
+}
