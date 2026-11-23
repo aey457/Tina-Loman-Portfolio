@@ -105,17 +105,36 @@
   background: #fff8ef;
   font-size: 0.9rem;
 }
+
+/* Neurofit / Information Architecture Artifacts */
+
 .project-theme--neurofit .nf-artifact-placeholder {
+  width: 100%;
   min-height: 320px;
   display: grid;
   place-items: center;
-  text-align: center;
-  padding: 2rem;
-  border: 2px dashed #b8b4d4;
-  background: #f7f5fc;
+  padding: 1rem;
+  border: 1px solid #e1d7f4;
+  background: #f7f4fc;
   border-radius: 12px;
-  color: #474747;
+  overflow: hidden;
 }
+
+.project-theme--neurofit .nf-artifact-placeholder img {
+  display: block;
+  width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+}
+
+.project-theme--neurofit .nf-artifact-label {
+  margin: 0.75rem 0 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--nf-primary);
+}
+
 .project-theme--neurofit .nf-system-figure {
   margin: 0;
   background: #fff;
@@ -1772,5 +1791,231 @@
 
   .project-theme--neurofit .nf-learning-note {
     padding: 1rem;
+  }
+}
+
+/* NEUROFIT / Sections 05–07 additions.
+   Keep your existing shared project-detail.css and neurofit.css.
+   Add this block once at the END of neurofit.css, or link this file AFTER neurofit.css.
+   Existing device mockup, feature rows, decision list and results styling are reused. */
+
+/* Ensure the new, long-form execution section maintains readable text on dark backgrounds. */
+.project-theme--neurofit
+  .nf-execution-section
+  .feature-development-row
+  > div
+  > p:not(.nf-execution-credit),
+.project-theme--neurofit .nf-execution-section .feature-development-intro {
+  color: rgba(255, 255, 255, 0.86);
+}
+.project-theme--neurofit .nf-execution-section .nf-execution-credit,
+.project-theme--neurofit .nf-execution-section .nf-execution-supporting-note {
+  margin-top: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.78);
+}
+.project-theme--neurofit .nf-execution-section .nf-execution-credit strong {
+  color: #fff;
+}
+.project-theme--neurofit .nf-execution-section .nf-system-figure {
+  height: 100%;
+}
+.project-theme--neurofit
+  .nf-execution-section
+  .nf-execution-secondary-artifact {
+  margin-top: 1rem;
+}
+.project-theme--neurofit
+  .nf-execution-section
+  .nf-execution-secondary-artifact
+  > .description {
+  color: rgba(255, 255, 255, 0.82);
+}
+/* Explicit placeholders for images whose filenames were not supplied. */
+.project-theme--neurofit .nf-execution-image-placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 230px;
+  padding: 1.5rem;
+  border: 2px dashed #b8b4d4;
+  border-radius: 10px;
+  background: #f7f4fc;
+  color: #51465a;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+.project-theme--neurofit .nf-execution-image-placeholder--short {
+  min-height: 140px;
+}
+.project-theme--neurofit .nf-execution-device-placeholder {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 280px;
+  padding: 1rem;
+  background: #f7f4fc;
+  color: #51465a;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* Component library and handoff gallery */
+.project-theme--neurofit .nf-system-gallery {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.project-theme--neurofit .nf-system-gallery .nf-system-figure {
+  margin: 0;
+}
+
+.project-theme--neurofit .nf-system-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Typography and layout guidelines */
+.project-theme--neurofit .nf-visual-guidelines {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+  align-items: flex-start;
+}
+
+.project-theme--neurofit .nf-visual-guidelines .nf-system-figure {
+  flex: 1 1 0;
+  min-width: 0;
+  margin: 0;
+}
+
+.project-theme--neurofit .nf-visual-guidelines img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 12px;
+}
+
+@media (max-width: 575.98px) {
+  .project-theme--neurofit .nf-visual-guidelines {
+    flex-direction: column;
+  }
+
+  .project-theme--neurofit .nf-visual-guidelines .nf-system-figure {
+    width: 100%;
+  }
+}
+
+/* 04 / Compact scrollable mid-fidelity gallery */
+
+.project-theme--neurofit .nf-midfi-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.project-theme--neurofit .nf-midfi-card {
+  margin: 0;
+  min-width: 0;
+}
+
+.project-theme--neurofit .nf-midfi-preview {
+  position: relative;
+  height: 280px;
+  padding: 0.65rem;
+  background: #f7f4fc;
+  border: 1px solid #e1d7f4;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Desktop: fill available width and scroll vertically */
+.project-theme--neurofit .nf-midfi-desktop-scroll {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #fff;
+  border-radius: 6px;
+  scrollbar-width: thin;
+}
+
+.project-theme--neurofit .nf-midfi-desktop-scroll img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+/* Mobile: independently scrollable overlay */
+.project-theme--neurofit .nf-midfi-mobile-scroll {
+  position: absolute;
+  right: 0.8rem;
+  bottom: 0.8rem;
+  width: 29%;
+  height: 76%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #fff;
+  border: 3px solid #fff;
+  border-radius: 9px;
+  box-shadow: 0 5px 18px rgba(50, 40, 38, 0.2);
+  scrollbar-width: thin;
+}
+
+.project-theme--neurofit .nf-midfi-mobile-scroll img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+/* Responsive */
+@media (max-width: 575.98px) {
+  .project-theme--neurofit .nf-midfi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-theme--neurofit .nf-midfi-preview {
+    height: 300px;
+  }
+}
+
+/* Realistic evaluation language, using the existing decision-list component. */
+.project-theme--neurofit .nf-evaluation-section .nf-testing-limitations {
+  padding: 2rem;
+  border: 1px solid #e1d7f4;
+  border-left: 4px solid var(--nf-primary);
+  border-radius: 12px;
+  background: #f7f4fc;
+}
+.project-theme--neurofit .nf-testing-eyebrow {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--nf-primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.project-theme--neurofit .nf-testing-limitations h3 {
+  margin-bottom: 1rem;
+  color: var(--nf-ink);
+}
+.project-theme--neurofit .nf-testing-limitations p {
+  max-width: 950px;
+  color: #51465a;
+  line-height: 1.8;
+}
+@media (max-width: 767.98px) {
+  .project-theme--neurofit .nf-evaluation-section .nf-testing-limitations {
+    padding: 1.25rem;
+  }
+  .project-theme--neurofit .nf-execution-image-placeholder {
+    min-height: 170px;
   }
 }
