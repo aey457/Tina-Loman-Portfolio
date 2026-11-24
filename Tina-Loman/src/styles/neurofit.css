@@ -1659,6 +1659,116 @@
   color: var(--nf-strategy-muted);
 }
 
+/* ==========================================
+   PRIMARY RESEARCH / RECRUITMENT OPERATIONS
+   ========================================== */
+
+.project-theme--neurofit .nf-recruitment-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #f7f4fc;
+  border: 1px solid #e1d7f4;
+  border-radius: 16px;
+  color: #40394d;
+}
+
+/* Introduction */
+
+.project-theme--neurofit .nf-recruitment-intro {
+  max-width: 850px;
+  margin-bottom: 1.5rem;
+}
+
+.project-theme--neurofit .nf-recruitment-intro .description {
+  color: #79628f;
+}
+
+.project-theme--neurofit .nf-recruitment-intro h4 {
+  margin-bottom: 1rem;
+  color: #35234f;
+}
+
+.project-theme--neurofit .nf-recruitment-intro p:not(.description) {
+  color: #40394d;
+}
+
+/* Two-column gallery */
+
+.project-theme--neurofit .nf-recruitment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.project-theme--neurofit .nf-recruitment-card {
+  margin: 0;
+  min-width: 0;
+}
+
+/* Scrollable image previews */
+
+.project-theme--neurofit .nf-recruitment-preview {
+  height: 320px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #fff;
+  border: 1px solid #e1d7f4;
+  border-radius: 10px;
+  scrollbar-width: thin;
+}
+
+.project-theme--neurofit .nf-recruitment-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+.project-theme--neurofit .nf-recruitment-preview:focus-visible {
+  outline: 2px solid #79628f;
+  outline-offset: 3px;
+}
+
+/* Image captions */
+
+.project-theme--neurofit .nf-recruitment-card figcaption {
+  margin-top: 0.75rem;
+  color: #40394d;
+}
+
+.project-theme--neurofit .nf-recruitment-card figcaption strong {
+  color: #35234f;
+}
+
+/* Individual contribution */
+
+.project-theme--neurofit .nf-recruitment-section .showcase-contribution {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  color: #40394d;
+}
+
+.project-theme--neurofit .nf-recruitment-section .showcase-contribution strong {
+  color: #35234f;
+}
+
+/* Responsive layout */
+
+@media (max-width: 767.98px) {
+  .project-theme--neurofit .nf-recruitment-section {
+    margin-top: 2rem;
+    padding: 1.25rem;
+  }
+
+  .project-theme--neurofit .nf-recruitment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-theme--neurofit .nf-recruitment-preview {
+    height: 280px;
+  }
+}
+
 /* Design Direction */
 
 .project-theme--neurofit .nf-strategy-section .nf-rq-response {
