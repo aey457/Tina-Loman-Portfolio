@@ -2129,3 +2129,292 @@
     min-height: 170px;
   }
 }
+
+/* 06 / Learning Journey — replace earlier nf-journey styles */
+.project-theme--neurofit .nf-learning-journey {
+  width: 100%;
+  margin: 0;
+  padding: 5rem 0;
+  background: #faf8fd;
+  color: #40394d;
+}
+.project-theme--neurofit .nf-journey-intro {
+  max-width: 900px;
+  margin-bottom: 2rem;
+}
+.project-theme--neurofit .nf-journey-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
+  padding: 1.75rem 0;
+  border: 0;
+}
+.project-theme--neurofit .nf-journey-media {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+.project-theme--neurofit .nf-journey-media figure {
+  margin: 0;
+  min-width: 0;
+}
+.project-theme--neurofit .nf-journey-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e1d7f4;
+  border-radius: 8px;
+}
+.project-theme--neurofit .nf-journey-media figcaption {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  color: inherit;
+}
+.project-theme--neurofit .nf-journey-annotation {
+  background: #f7f4fc;
+  border: 1px solid #e1d7f4;
+  border-left: 3px solid #9274c6;
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: #40394d;
+}
+.project-theme--neurofit .nf-journey-annotation .nf-journey-label {
+  display: block;
+  color: #62428a;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+}
+.project-theme--neurofit .nf-journey-annotation h4 {
+  color: #35234f;
+  margin: 0 0 0.75rem;
+}
+.project-theme--neurofit .nf-journey-annotation p {
+  color: #40394d;
+  margin: 0;
+  line-height: 1.65;
+}
+.project-theme--neurofit .nf-learning-journey .nf-execution-credit {
+  margin-top: 1.5rem;
+}
+.project-theme--neurofit .nf-journey-note {
+  font-size: 0.875rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+.project-theme--neurofit .nf-journey-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 600;
+}
+@media (max-width: 991.98px) {
+  .project-theme--neurofit .nf-journey-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .project-theme--neurofit .nf-learning-journey {
+    margin-top: 0;
+    padding: 3rem 0;
+  }
+}
+
+.project-theme--neurofit .nf-learning-journey h2,
+.project-theme--neurofit .nf-learning-journey h3,
+.project-theme--neurofit .nf-learning-journey h4 {
+  color: #35234f;
+}
+.project-theme--neurofit .nf-learning-journey p,
+.project-theme--neurofit .nf-learning-journey figcaption,
+.project-theme--neurofit .nf-learning-journey strong {
+  color: #40394d;
+}
+.project-theme--neurofit .nf-learning-journey .feature-detail-number,
+.project-theme--neurofit .nf-learning-journey .nf-journey-link {
+  color: #62428a;
+}
+.project-theme--neurofit .nf-journey-measurement {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #eee8f8;
+  border-radius: 12px;
+}
+.project-theme--neurofit .nf-journey-measurement p {
+  margin-bottom: 0;
+}
+
+/* ==========================================
+   PROPOSED PERFORMANCE MEASUREMENT
+   ========================================== */
+
+.project-theme--neurofit .nf-performance-measurement {
+  margin-top: 4rem;
+  padding: 2.5rem;
+  background: #f0ebf8;
+  border-radius: 16px;
+  color: #40394d;
+}
+
+/* Introduction */
+
+.project-theme--neurofit .nf-performance-intro {
+  max-width: 900px;
+  margin-bottom: 2rem;
+}
+
+.project-theme--neurofit .nf-performance-intro h3 {
+  color: #35234f;
+  margin-top: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.project-theme--neurofit .nf-performance-intro p {
+  color: #40394d;
+}
+
+/* Measurement grid */
+
+.project-theme--neurofit .nf-performance-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+/* Individual measurement cards */
+
+.project-theme--neurofit .nf-performance-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #e1d7f4;
+  border-radius: 12px;
+  color: #40394d;
+}
+
+.project-theme--neurofit .nf-performance-number {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #7952b3;
+}
+
+.project-theme--neurofit .nf-performance-card h4 {
+  color: #35234f;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+.project-theme--neurofit .nf-performance-card p {
+  color: #40394d;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.project-theme--neurofit .nf-performance-card .nf-performance-metric {
+  color: #62428a;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project-theme--neurofit .nf-performance-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Validation note */
+
+.project-theme--neurofit .nf-performance-note {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  color: #6b6275;
+  font-size: 0.875rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* Tablet */
+
+@media (max-width: 1199.98px) {
+  .project-theme--neurofit .nf-performance-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 575.98px) {
+  .project-theme--neurofit .nf-performance-measurement {
+    margin-top: 2.5rem;
+    padding: 1.25rem;
+  }
+
+  .project-theme--neurofit .nf-performance-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-theme--neurofit .nf-performance-card {
+    padding: 1.25rem;
+  }
+}
+
+/* Learning Journey — Individual Contribution & Content Note */
+
+.project-theme--neurofit .nf-journey-contribution {
+  margin-top: 3rem;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  border-left: 3px solid #9274c6;
+  max-width: 950px;
+}
+
+.project-theme--neurofit .nf-journey-contribution h4 {
+  color: #35234f;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.project-theme--neurofit .nf-journey-contribution p {
+  color: #40394d;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.project-theme--neurofit .nf-journey-contribution h4:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.project-theme--neurofit .nf-journey-contribution p:last-child {
+  margin-bottom: 0;
+}
+
+.project-theme--neurofit .nf-journey-note {
+  margin-top: 1.5rem;
+  color: #6b6275;
+  font-size: 0.875rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+.project-theme--neurofit .nf-journey-prototype-link {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.project-theme--neurofit .nf-journey-link {
+  display: inline-flex;
+  align-items: center;
+  color: #62428a;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.project-theme--neurofit .nf-journey-link:hover {
+  color: #35234f;
+  text-decoration: underline;
+}
